@@ -1,4 +1,4 @@
-# MySQL as MongoDB
+# MySQL as MongoDB for Node.js
 
 Use MySQL in Node.js as if it was MongoDB. 
 Drop in replacement for MongoDB database code.
@@ -8,14 +8,21 @@ That is, you can use JSON / CSON / JavaScript objects to insert data into a MySQ
 For example:
 
 ```
+var db = require('db-mysql');
+
 var _pineapple = {
   name: 'Pineapple', 
   genus: 'Ananas comosus',
   nativeTo: 'South America' 
 };
+
+db.open(function() {
+	console.log('Created new schema!');
+});
+
 db.insertOne('fruit', _pineapple, function(err, pineapple) {`
   console.log('Added %s (%s) to fruit schema.', pineapple.name, pineapple.genus);`
-}
+});
 ```
 
 will be converted by `db-mysql.js` to this SQL and stored in a MySQL schema:
