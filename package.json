@@ -3,17 +3,18 @@
   "version": "1.0.0",
   "description": "Use MySQL in Node.js as if it was MongoDB.",
   "main": "./lib/db-mysql.js",
+  "scripts": {
+    "test": "node ./lib/db-mysql.tests.js"
+  },
   "preferGlobal": false,
   "dependencies": {
     "mongodb": "^1.4.31",
-    "mysql": "^2.5.4",
+    "mysql": "^2.6.1",
     "sprintf.js": "^0.1.4"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
-  },
-  "scripts": {
-    "test": "node_modules/mocha/bin/mocha ./lib/db-mysql.test.js"
+    "should": "^4.3.0"
   },
   "repository": {
     "type": "git",
