@@ -1,0 +1,15 @@
+#
+# Define MySQL database configuration.
+# Copy this file as <db.mysql.cson> to use.
+# Important: This file must be UTF-8 encoded!
+#
+
+{
+	db:
+
+		schema: '%SCHEMA%'
+		host: '%HOST%'
+		port: 13306
+		user: '%USER%'
+		pass: '%PASS%'
+}

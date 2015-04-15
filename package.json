@@ -10,7 +10,8 @@
   "dependencies": {
     "mongodb": "^1.4.31",
     "mysql": "^2.6.1",
-    "sprintf.js": "^0.1.4"
+    "sprintf.js": "^0.1.4",
+    "cson": "^3.0.1"
   },
   "devDependencies": {
     "mocha": "^2.1.0",
